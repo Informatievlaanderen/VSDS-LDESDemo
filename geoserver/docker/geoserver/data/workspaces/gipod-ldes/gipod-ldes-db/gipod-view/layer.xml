@@ -1,0 +1,22 @@
+<layer>
+  <name>gipod-view</name>
+  <id>LayerInfoImpl-191fb7f8:183a8235995:-7ff1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-191fb7f8:183a8235995:-7ffc</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-191fb7f8:183a8235995:-7ffc</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-191fb7f8:183a8235995:-7ff2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-05 13:12:18.873 UTC</dateCreated>
+  <dateModified>2022-10-05 13:23:37.953 UTC</dateModified>
+</layer>

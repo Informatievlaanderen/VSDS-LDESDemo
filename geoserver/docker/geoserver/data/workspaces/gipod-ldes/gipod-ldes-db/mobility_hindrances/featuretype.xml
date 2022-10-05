@@ -1,0 +1,57 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--336f8791:182601a542f:-7ff3</id>
+  <name>mobility_hindrances</name>
+  <nativeName>mobility_hindrances</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--336f8791:182601a542f:-7ff5</id>
+  </namespace>
+  <title>mobility_hindrances</title>
+  <keywords>
+    <string>features</string>
+    <string>mobility_hindrances</string>
+  </keywords>
+  <srs>EPSG:31370</srs>
+  <nativeBoundingBox>
+    <minx>14722.202449434262</minx>
+    <maxx>297229.2322763553</maxx>
+    <miny>20841.15747877769</miny>
+    <maxy>246366.94720795378</maxy>
+    <crs class="projected">EPSG:31370</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>2.4201514201045375</minx>
+    <maxx>6.489436656568245</maxx>
+    <miny>49.48129482212485</miny>
+    <maxy>51.52680103476732</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="elevation">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="time">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--336f8791:182601a542f:-7ff4</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>
