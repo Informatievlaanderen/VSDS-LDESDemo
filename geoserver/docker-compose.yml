@@ -46,14 +46,14 @@ services:
       - 5432:5432
   gdal:
     build: docker/gdal
+    container_name: ldes-gdal
     image: digitaalvlaanderen/gdal
     ports:
       - 8090:8090
   nifi:
     image: agturley/nifi:1.16.3-jdk17
-    container_name: nifi
+    container_name: ldes-nifi
     restart: unless-stopped
-    #network_mode: bridge
     ports:
       # HTTPS
       - 8443:8443/tcp
