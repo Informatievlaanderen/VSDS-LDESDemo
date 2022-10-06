@@ -1,44 +1,40 @@
 <featureType>
-  <id>FeatureTypeInfoImpl--336f8791:182601a542f:-7ff3</id>
-  <name>mobility_hindrances</name>
-  <nativeName>mobility_hindrances</nativeName>
+  <id>FeatureTypeInfoImpl--46ddec30:183ad9398db:-7ff6</id>
+  <name>mobility-hindrances</name>
+  <nativeName>mobility-hindrances</nativeName>
   <namespace>
     <id>NamespaceInfoImpl--336f8791:182601a542f:-7ff5</id>
   </namespace>
-  <title>mobility_hindrances</title>
+  <title>mobility-hindrances</title>
   <keywords>
     <string>features</string>
-    <string>mobility_hindrances</string>
+    <string>mobility-hindrances</string>
   </keywords>
-  <srs>EPSG:31370</srs>
+  <srs>EPSG:4326</srs>
   <nativeBoundingBox>
-    <minx>14722.202449434262</minx>
-    <maxx>297229.2322763553</maxx>
-    <miny>20841.15747877769</miny>
-    <maxy>246366.94720795378</maxy>
-    <crs class="projected">EPSG:31370</crs>
+    <minx>2.56608203613367</minx>
+    <maxx>5.5958012917063</maxx>
+    <miny>50.6354962955186</miny>
+    <maxy>51.3895353797559</maxy>
   </nativeBoundingBox>
   <latLonBoundingBox>
-    <minx>2.4201514201045375</minx>
-    <maxx>6.489436656568245</maxx>
-    <miny>49.48129482212485</miny>
-    <maxy>51.52680103476732</maxy>
+    <minx>2.56608203613367</minx>
+    <maxx>5.5958012917063</maxx>
+    <miny>50.6354962955186</miny>
+    <maxy>51.3895353797559</maxy>
     <crs>EPSG:4326</crs>
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
   <metadata>
-    <entry key="elevation">
-      <dimensionInfo>
-        <enabled>false</enabled>
-      </dimensionInfo>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>mobility-hindrances</name>
+        <sql>select * from mobility_hindrances
+</sql>
+        <escapeSql>false</escapeSql>
+      </virtualTable>
     </entry>
-    <entry key="time">
-      <dimensionInfo>
-        <enabled>false</enabled>
-      </dimensionInfo>
-    </entry>
-    <entry key="cachingEnabled">false</entry>
   </metadata>
   <store class="dataStore">
     <id>DataStoreInfoImpl--336f8791:182601a542f:-7ff4</id>
