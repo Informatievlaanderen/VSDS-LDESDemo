@@ -3,7 +3,7 @@
 ## Setup
 * Start the docker stack
 ```
-docker-composer up
+docker-compose up
 ```
 This will start Apache NiFi, PostreSQL and GeoServer.
 Next, load the demo data pipeline in Apache NiFi
