@@ -1,14 +1,14 @@
 <featureType>
-  <id>FeatureTypeInfoImpl--336f8791:182601a542f:-7ff3</id>
-  <name>mobility_hindrances</name>
-  <nativeName>mobility_hindrances</nativeName>
+  <id>FeatureTypeInfoImpl--46ddec30:183ad9398db:-7ff6</id>
+  <name>mobility-hindrances</name>
+  <nativeName>mobility-hindrances</nativeName>
   <namespace>
     <id>NamespaceInfoImpl--336f8791:182601a542f:-7ff5</id>
   </namespace>
-  <title>mobility_hindrances</title>
+  <title>mobility-hindrances</title>
   <keywords>
     <string>features</string>
-    <string>mobility_hindrances</string>
+    <string>mobility-hindrances</string>
   </keywords>
   <srs>EPSG:4326</srs>
   <nativeBoundingBox>
@@ -28,17 +28,14 @@
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
   <metadata>
-    <entry key="elevation">
-      <dimensionInfo>
-        <enabled>false</enabled>
-      </dimensionInfo>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>mobility-hindrances</name>
+        <sql>select * from mobility_hindrances
+</sql>
+        <escapeSql>false</escapeSql>
+      </virtualTable>
     </entry>
-    <entry key="time">
-      <dimensionInfo>
-        <enabled>false</enabled>
-      </dimensionInfo>
-    </entry>
-    <entry key="cachingEnabled">false</entry>
   </metadata>
   <store class="dataStore">
     <id>DataStoreInfoImpl--336f8791:182601a542f:-7ff4</id>
