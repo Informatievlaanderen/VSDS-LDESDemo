@@ -41,6 +41,8 @@ class RequestHandler(BaseHTTPRequestHandler):
             source.ImportFromEPSG(crs_from)
             
             target = osr.SpatialReference()
+
+            target.SetAxisMappingStrategy(osr.OAMS_TRADITIONAL_GIS_ORDER)
             target.ImportFromEPSG(crs_to)
         
             transform = osr.CoordinateTransformation(source, target)
