@@ -34,75 +34,36 @@ services:
       - postgis
 
   postgis:
-    image: postgis/postgis
+    build: ./docker/postgress
+    container_name: ldes-postgis
     environment:
       POSTGRES_DB: mobility_hindrance
       POSTGRES_USER: ldes
       POSTGRES_PASSWORD: ldes
     volumes:
         - geo-db-data:/var/lib/postgresql
-        - ./docker/postgress/init-db:/docker-entrypoint-initdb.d
     ports:
       - 5432:5432
-
   gdal:
     build: docker/gdal
+    container_name: ldes-gdal
     image: digitaalvlaanderen/gdal
     ports:
       - 8090:8090
-
   nifi:
-    build:
-      context: docker/nifi
-      args:
-        IMAGE_TAG: 17-jre
-        IMAGE_NAME: eclipse-temurin
-    restart: on-failure
+    image: agturley/nifi:1.16.3-jdk17
+    container_name: ldes-nifi
+    restart: unless-stopped
     ports:
-      - '8080:8080'
-    environment:
-      SINGLE_USER_CREDENTIALS_USERNAME: 'admin'
-      SINGLE_USER_CREDENTIALS_PASSWORD: 'SuperSecretPassword!'
-        #NIFI_WEB_HTTPS_PORT: 8443
-        #NIFI_WEB_HTTP_PORT: '' 
-        #AUTH: 'tls'
-        #NIFI_SECURITY_USER_AUTHORIZER: 'single-user-authorizer'
-        #NIFI_SECURITY_USER_LOGIN_IDENTITY_PROVIDER: 'single-user-provider'
-        #KEYSTORE_PATH: '/opt/certs/keystore.jks'
-      ########## Web ##########
-
-      # nifi.web.http.host
-      NIFI_WEB_HTTP_HOST: '0.0.0.0'
-      
-      # nifi.web.http.port
-      #   HTTP Port
-      NIFI_WEB_HTTP_PORT: 8080
-
-      # nifi.web.https.host
-      NIFI_WEB_HTTPS_HOST: '0.0.0.0'
-      
-      # nifi.web.https.port
-      #   HTTPS Port
-      NIFI_WEB_HTTPS_PORT: 8443
-
-      # nifi.web.proxy.host
-      #   If mapping the HTTPS port specifying trusted hosts should be provided for this property.
-      #NIFI_WEB_PROXY_HOST: ''
-
-      # nifi.web.proxy.context.path
-      #   If NiFi is proxied at context paths other than the root path of the proxy, the paths need to be set in this
-      #   property.
-      #NIFI_WEB_PROXY_CONTEXT_PATH: ''
-
+      # HTTPS
+      - 8443:8443/tcp
     volumes:
-        # Bind mount
-      - ./nifi-extensions/:/opt/nifi/nifi-current/extensions
-        # Volumes
-      - nifi-database-repository:/opt/nifi/nifi-current/database_repository
-      - nifi-flowfile-repository:/opt/nifi/nifi-current/flowfile_repository
-      - nifi-content-repository:/opt/nifi/nifi-current/content_repository
-      - nifi-provenance-repository:/opt/nifi/nifi-current/provenance_repository
-      - nifi-state:/opt/nifi/nifi-current/state
-      - nifi-logs:/opt/nifi/nifi-current/logs
-      - nifi-conf:/opt/nifi/nifi-current/conf
+      - ./nifi-extensions:/opt/nifi/nifi-current/extensions
+    environment:
+      - NIFI_UI_PORT=8443
+      - SINGLE_USER_CREDENTIALS_USERNAME=admin
+      - SINGLE_USER_CREDENTIALS_PASSWORD=admin123456789
+      - NIFI_WORKFLOW_LISTEN_PORT=9005
+      - NIFI_JVM_HEAP_INIT=8g
+      - NIFI_JVM_HEAP_MAX=8g
 
