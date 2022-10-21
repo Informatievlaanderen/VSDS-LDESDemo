@@ -38,3 +38,7 @@ Next, load the demo data pipeline in Apache NiFi
 
 The endpoint is available at http://localhost:8002/geoserver/gipod-ldes/wms
 
+## Power BI dashboard
+Open Power BI file and sync datasets with PostGIS db tables
+
+![image](https://user-images.githubusercontent.com/15192194/195372192-973e3136-03f0-44d2-87f0-4fb74a321c4a.png)
