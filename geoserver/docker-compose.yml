@@ -51,7 +51,7 @@ services:
     ports:
       - 8090:8090
   nifi:
-    image: agturley/nifi:1.16.3-jdk17
+    build: docker/nifi
     container_name: ldes-nifi
     restart: unless-stopped
     ports:
