@@ -30,6 +30,11 @@ services:
     environment:
       - GEOSERVER_ADMIN_PASSWORD=ldes
       - GEOSERVER_ADMIN_USER=ldes
+      - POSTGRES_JNDI=TRUE
+      - HOST=postgis
+      - POSTGRES_DB=mobility_hindrance
+      - POSTGRES_USER=ldes
+      - POSTGRES_PASS=ldes
     depends_on:
       - postgis
 
@@ -57,8 +62,6 @@ services:
     ports:
       # HTTPS
       - 8443:8443/tcp
-    volumes:
-      - ./nifi-extensions:/opt/nifi/nifi-current/extensions
     environment:
       - NIFI_UI_PORT=8443
       - SINGLE_USER_CREDENTIALS_USERNAME=admin

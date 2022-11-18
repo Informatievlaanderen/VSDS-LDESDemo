@@ -1,0 +1,17 @@
+<layer>
+  <name>mobility_hindrances</name>
+  <id>LayerInfoImpl--9337a85:1848a93d7cb:-7fc8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--483d6a0a:1848a91ecba:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--9337a85:1848a93d7cb:-7fc9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-11-18 12:00:44.185 UTC</dateCreated>
+  <dateModified>2022-11-18 12:02:16.337 UTC</dateModified>
+</layer>

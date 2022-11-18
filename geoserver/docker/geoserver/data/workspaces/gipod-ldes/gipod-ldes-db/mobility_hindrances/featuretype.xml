@@ -1,44 +1,34 @@
 <featureType>
-  <id>FeatureTypeInfoImpl--46ddec30:183ad9398db:-7ff6</id>
-  <name>mobility-hindrances</name>
-  <nativeName>mobility-hindrances</nativeName>
+  <id>FeatureTypeInfoImpl--9337a85:1848a93d7cb:-7fc9</id>
+  <name>mobility_hindrances</name>
+  <nativeName>mobility_hindrances</nativeName>
   <namespace>
     <id>NamespaceInfoImpl--336f8791:182601a542f:-7ff5</id>
   </namespace>
-  <title>mobility-hindrances</title>
+  <title>mobility_hindrances</title>
   <keywords>
     <string>features</string>
-    <string>mobility-hindrances</string>
+    <string>mobility_hindrances</string>
   </keywords>
   <srs>EPSG:4326</srs>
   <nativeBoundingBox>
-    <minx>2.4201514201045375</minx>
-    <maxx>6.489436656568245</maxx>
-    <miny>49.48129482212485</miny>
-    <maxy>51.52680103476732</maxy>
-    <crs class="projected">EPSG:4326</crs>
+    <minx>-180.0</minx>
+    <maxx>180.0</maxx>
+    <miny>-90.0</miny>
+    <maxy>90.0</maxy>
+    <crs>EPSG:4326</crs>
   </nativeBoundingBox>
   <latLonBoundingBox>
-    <minx>2.4201514201045375</minx>
-    <maxx>6.489436656568245</maxx>
-    <miny>49.48129482212485</miny>
-    <maxy>51.52680103476732</maxy>
+    <minx>-180.0</minx>
+    <maxx>180.0</maxx>
+    <miny>-90.0</miny>
+    <maxy>90.0</maxy>
     <crs>EPSG:4326</crs>
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
-  <metadata>
-    <entry key="JDBC_VIRTUAL_TABLE">
-      <virtualTable>
-        <name>mobility-hindrances</name>
-        <sql>select * from mobility_hindrances
-</sql>
-        <escapeSql>false</escapeSql>
-      </virtualTable>
-    </entry>
-  </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl--336f8791:182601a542f:-7ff4</id>
+    <id>DataStoreInfoImpl--9337a85:1848a93d7cb:-7fca</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>
